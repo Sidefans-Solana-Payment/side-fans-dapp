@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "umi dev",
+    "dev:prod": "cross-env UMI_ENV=uat umi dev",
+    "build": "cross-env umi build",
+    "build:prod": "cross-env UMI_ENV=uat umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@solana/spl-memo": "^0.2.3",
+    "@solana/spl-token": "^0.3.10",
+    "@solana/web3.js": "^1.87.6",
+    "umi": "^4.3.28",
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@umijs/lint": "^4.3.28",
+    "@umijs/plugins": "^4.3.28",
+    "eslint": "^8.57.1",
+    "lint-staged": "^15.2.10",
+    "prettier": "^2.8.8",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "stylelint": "^14.16.1",
+    "tailwindcss": "^3",
+    "typescript": "^5.0.3"
+  }
+}
